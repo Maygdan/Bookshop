@@ -13,7 +13,7 @@ const Header = ({ cartCount }) => {
         </ul>
       </nav>
       <div className={styles.icons}>
-  {/* Иконка пользователя */}
+  {}
   <button className={styles.iconBtn}>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#2D3436" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="20" height="20">
       <path d="M20 21v-2a4 4 0 0 0-5.656-3.907A4 4 0 0 0 12 17a4 4 0 0 0-2.344-1.093A4 4 0 0 0 4 19v2" />
@@ -21,7 +21,7 @@ const Header = ({ cartCount }) => {
     </svg>
   </button>
 
-  {/* Иконка поиска */}
+  {}
   <button className={styles.iconBtn}>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#2D3436" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="20" height="20">
       <circle cx="11" cy="11" r="8" />
@@ -29,7 +29,7 @@ const Header = ({ cartCount }) => {
     </svg>
   </button>
 
-  {/* Иконка корзины с бейджиком */}
+  {}
   <button className={styles.iconBtn}>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#2D3436" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="20" height="20">
       <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />

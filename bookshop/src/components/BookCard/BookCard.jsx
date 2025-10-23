@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './BookCard.module.css';
 
 const BookCard = ({ book, isInCart, onToggleCart }) => {
@@ -25,10 +24,10 @@ const BookCard = ({ book, isInCart, onToggleCart }) => {
 
   return (
     <div className={styles.bookCard}>
-      {/* Обложка */}
+      {}
       <img src={cover} alt={title} className={styles.cover} />
 
-      {/* Информация о книге */}
+      {}
       <div className={styles.info}>
         <p className={styles.author}>{authors}</p>
         <h3 className={styles.title}>{title}</h3>

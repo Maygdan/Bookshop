@@ -14,21 +14,18 @@ function App() {
   const [cart, setCart] = useState(getCart());
   const maxResults = 6;
 
-  // Загрузка книг при изменении категории или при нажатии "Load More"
   const loadBooks = async (category, startIdx) => {
     const newBooks = await fetchBooksByCategory(category, startIdx, maxResults);
     setBooks(prev => [...prev, ...newBooks]);
     setStartIndex(prev => prev + maxResults);
   };
 
-  // Загрузка первых книг при изменении категории
   useEffect(() => {
     setBooks([]);
     setStartIndex(0);
     loadBooks(currentCategory, 0);
   }, [currentCategory]);
 
-  // Обновление корзины при изменении в localStorage
   useEffect(() => {
     setCart(getCart());
   }, []);
@@ -47,7 +44,7 @@ function App() {
     } else {
       addToCart(bookId);
     }
-    // Обновляем состояние корзины, чтобы перерендерить бейджик
+    
     setCart(getCart());
   };
 

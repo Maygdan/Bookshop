@@ -1,4 +1,4 @@
-const API_KEY = 'AIzaSyAZ7zUvKGlqq6ELhJ-mfdGqMASBIPGAOnE'; // Замените на свой ключ!
+const API_KEY = 'AIzaSyAZ7zUvKGlqq6ELhJ-mfdGqMASBIPGAOnE'; 
 
 export const fetchBooksByCategory = async (category, startIndex = 0, maxResults = 6) => {
   try {

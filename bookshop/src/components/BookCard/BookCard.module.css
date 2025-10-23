@@ -5,9 +5,9 @@
   padding: 1rem;
   background-color: white;
   border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Легкая тень */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   width: 100%;
-  max-width: 800px; /* Ограничиваем ширину */
+  max-width: 800px; 
 }
 
 .cover {
@@ -47,10 +47,9 @@
   line-height: 1.4;
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 3; /* Для старых браузеров */
-  line-clamp: 3;         /* Стандартное свойство */
+  -webkit-line-clamp: 3; 
+  line-clamp: 3;         
   -webkit-box-orient: vertical;
-  /* Если line-clamp не поддерживается, можно добавить "display: -webkit-box;" и "text-overflow: ellipsis;" */
 }
 
 .price {

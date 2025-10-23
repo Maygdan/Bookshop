@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import styles from './Slider.module.css';
 
-// Импортируем готовые изображения слайдов
+
 import slider1 from '../../assets/images/slider1.jpg';
 import slider2 from '../../assets/images/slider2.jpg';
 import slider3 from '../../assets/images/slider3.jpg';
@@ -40,14 +40,14 @@ const Slider = () => {
       onMouseLeave={handleMouseLeave}
     >
       <div className={styles.sliderContainer}>
-        {/* Фоновое изображение */}
+        {}
         <img
           src={slides[currentIndex]}
           alt={`Slide ${currentIndex + 1}`}
           className={styles.sliderImage}
         />
 
-        {/* Блоки поверх баннера */}
+        {}
         <div className={styles.overlayBlocks}>
           <div className={styles.overlayBlock} style={{ backgroundColor: '#6C5CE7' }}>
             <div className={styles.overlayText}>
@@ -67,7 +67,7 @@ const Slider = () => {
           </div>
         </div>
       </div>
-      {/* Точки навигации */}
+      {}
       <div className={styles.sliderDots}>
         {slides.map((_, index) => (
           <button
