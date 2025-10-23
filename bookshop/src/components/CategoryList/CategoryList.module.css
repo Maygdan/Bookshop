@@ -1,0 +1,19 @@
+.categoryList {
+  list-style: none;
+}
+
+.categoryItem {
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  border-left: 4px solid transparent;
+  transition: all 0.2s;
+}
+
+.categoryItem:hover {
+  background-color: rgba(108, 92, 231, 0.1);
+}
+
+.categoryItemActive {
+  font-weight: bold;
+  border-left-color: #6C5CE7;
+}
